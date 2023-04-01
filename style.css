@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: url(https://img.freepik.com/premium-photo/dark-black-background-with-notebook-pen-premium-photo_659511-11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    background: linear-gradient(to right,transparent,black);
+}
+ul {
+    display: flex;
+    float: right;
+    align-items: center;
+    transform: translateY(-170%);
+}
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+ul li a.navbar {
+    width: 100%;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 20px;
+}
+@keyframes rachid{
+    0%{
+        color: blue;
+        transition: .2;
+    }
+    20%{
+        color: rgb(97, 3, 230);
+        transition: .4s;
+    }
+    40%{
+        color: rgb(24, 24, 24);
+        transition: .6s;
+    }
+    60%{
+        color: rgb(158, 5, 200);
+        transition: .8s;
+    }
+    80%{
+        color: rgb(75, 1, 72);
+        transition: 1s;
+    }
+    100%{
+        color: rgb(0, 0, 0);
+    }
+}
+ul li a#cv{
+    background-color: blue;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+ul li a.navbar:hover{
+    background-color: blueviolet;
+    color: black;
+    border-radius: 50px;
+}
+ul li a#cv:hover{
+    color: blue;
+    background-color: transparent;
+}
+h1{
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+h1 span{
+    color: black;
+    animation-name: rachid;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    font-size: 40px;
+    cursor: pointer;
+}
+h1 span:nth-child(1){
+    color: rgb(0, 0, 0);
+    transition: .5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+h1 span:nth-child(2){
+    color: rgb(17, 12, 12);
+    transition: .5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+h1 span:nth-child(3){
+    color: rgb(255, 255, 255);
+    transition: .5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+h1 span:nth-child(4){
+    color: rgb(52, 8, 8)(137, 90, 90);
+    transition: .5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+h1 span:nth-child(5){
+    color: rgb(146, 4, 4);
+    transition: .5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+h1 span:nth-child(6){
+    color: rgb(196, 6, 6);
+    transition: .5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+h1 span:nth-child(7){
+    color: rgb(224, 6, 6);
+    transition: .5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.hero{
+    color: white;
+    font-family: sans-serif;
+    padding: 200px 40px;
+}
+small{
+    font-size: 25px;
+}
+h2{
+    font-size: 50px;
+}
+r{
+    color: rgb(24, 153, 238);
+    letter-spacing: 2px;
+}
+p{
+    font-size: 20px;
+    color: black;
+    word-spacing: 4px;
+}
+button{
+    padding: 15px 15px;
+    border: transparent;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: blueviolet;
+    margin: auto;
+    display: flex;
+}
+button:hover {
+    background-color: transparent;
+}
+button a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+button a:hover{
+    color: rgb(0, 145, 255);
+}
+
+
+
+@media (max-width:690px) {
+    small{
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .container{
+        height: 200vh;
+    }
+    ul {
+        display: none;
+    }
+    h2{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 15px;
+        font-weight: bold;
+        width: 100%;
+        word-spacing: 0;
+        line-height: 35px;
+    }
+    nav#nav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+      }
+      .navlinks ul {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        transform: translateX(-120%);
+    }
+    .navlinks ul li a.nav{
+       color: white;
+       text-decoration: none;
+        font-size: 18px;
+    }
+
+}
+
+
+h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
